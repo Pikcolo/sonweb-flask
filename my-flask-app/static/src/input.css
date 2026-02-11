@@ -1,0 +1,11 @@
+/* static/src/input.css */
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* บอก Tailwind ให้สแกนหา class ในไฟล์ html */
+@source "../../templates"; 
+
+/* (Optional) ตั้งค่า DaisyUI Theme (ถ้าต้องการ) */
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
