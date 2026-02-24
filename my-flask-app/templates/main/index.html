@@ -17,8 +17,8 @@
             </p>
             {% if not current_user.is_authenticated %}
             <div class="flex gap-3 justify-center">
-              <a href="{{ url_for('auth.login') }}" class="btn btn-primary">เข้าสู่ระบบ</a>
-              <a href="{{ url_for('auth.register') }}" class="btn btn-outline btn-secondary">สมัครสมาชิก</a>
+              <a href="{{ url_for('accounts.login') }}" class="btn btn-primary">เข้าสู่ระบบ</a>
+              <a href="{{ url_for('accounts.register') }}" class="btn btn-outline btn-secondary">สมัครสมาชิก</a>
             </div>
             {% else %}
             <p class="text-lg font-semibold">ยินดีต้อนรับ {{ current_user.username }} 👋</p>
